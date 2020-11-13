@@ -1,13 +1,17 @@
 <div class="banner">
     <div class="banner-text">
-      <h1>Cocktails.</h1>
-      <p>A selection of cocktails to survive Lockdown. A selection of cocktails to survive Lockdown. A selection of cocktails to survive Lockdown. A selection of cocktails to survive Lockdown.</p>
-      <a class="btn btn-flat" href="#">Check our Cocktails</a>
+      <h1>
+        <span id="banner-typed-text"></span>
+      </h1>
+      <p>Have a look at our selection of cocktails that will help you go through this Lockdown. Feel free to add your own!</p>
+      <a class="btn btn-flat" href="#cocktail-section">See Cocktails</a>
+    <p>
+    </p>
     </div>
     <div class="banner-image">      <img src="https://i.pinimg.com/564x/9f/48/f5/9f48f578751cac1ba9d5ebad59119a89.jpg" alt="cocktail">
     </div>
 </div>
-<div class="cocktail-section">
+<div class="cocktail-section" id="cocktail-section">
   <div class="cocktail-list">
     <div class="row align-items-center">
       <% @cocktails.each do |cocktail| %>
