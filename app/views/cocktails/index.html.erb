@@ -17,11 +17,10 @@
       <% @cocktails.each do |cocktail| %>
         <div class="col-4">
           <%= link_to cocktail_path(cocktail) do %>
-            <% if cocktail.photo.attached? %>
+          <% if cocktail.photo.attached?  %>
              <div class="cocktail-category" style="background-image:url(<%= cl_image_path cocktail.photo.key  %>)">
-            <% end %>
           <% end %>
-      <% end %>
+          <% end %>
             <%= link_to cocktail.name, cocktail_path(cocktail), :class => "cockail-info" %>
             <%= link_to 'Destroy', cocktail, method: :delete, data: { confirm: 'Are you sure?' } %>
              </div>
