@@ -20,9 +20,13 @@ class CocktailsController < ApplicationController
     end
   end
 
-  private
-
-  def cocktail_params
-    params.require(:cocktail).permit(:name)
+  def destroy
+    @cocktail = Cocktail.find(params[:id])
+    @cocktail.destroy
   end
+
+  private
+    def cocktail_params
+      params.require(:cocktail).permit(:name, :photo)
+    end
 end

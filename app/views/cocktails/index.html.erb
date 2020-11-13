@@ -7,21 +7,22 @@
     <div class="banner-image">      <img src="https://i.pinimg.com/564x/9f/48/f5/9f48f578751cac1ba9d5ebad59119a89.jpg" alt="cocktail">
     </div>
 </div>
-
-<div class="cocktail-list">
-  <div class="row align-items-start">
-    <% @cocktails.each do |cocktail| %>
-      <div class="col-4">
-        <%= link_to cocktail_path(cocktail) do %>
-           <div class="cocktail-category" style="background-image:url(https://images.pexels.com/photos/316891/pexels-photo-316891.jpeg?cs=srgb&dl=pexels-snapwire-316891.jpg&fm=jpg)">
-        <% end %>
-          <%= link_to cocktail.name, cocktail_path(cocktail), :class => "cockail-info" %>
-           </div>
-      </div>
-    <% end %>
+<div class="cocktail-section">
+  <div class="cocktail-list">
+    <div class="row align-items-center">
+      <% @cocktails.each do |cocktail| %>
+        <div class="col-4">
+          <%= link_to cocktail_path(cocktail) do %>
+             <div class="cocktail-category" style="background-image:url(<%= cl_image_path cocktail.photo.key  %>)">
+          <% end %>
+            <%= link_to cocktail.name, cocktail_path(cocktail), :class => "cockail-info" %>
+             </div>
+        </div>
+      <% end %>
+    </div>
   </div>
-  <button type="button" class="btn btn-primary">
-    <%= link_to "Add Cocktail", new_cocktail_path  %>
-  </button>
+    <div class="center-button" style="text-align:center;">
+      <%= link_to "+ Add a Cocktail", new_cocktail_path, :class => "button-cocktail" %>
+    </div>
 </div>
 
