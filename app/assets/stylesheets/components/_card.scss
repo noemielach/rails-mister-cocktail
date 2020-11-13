@@ -1,0 +1,33 @@
+img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+a {
+  color:white;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+}
+
+a:hover{
+  color:white;
+  text-decoration: none;
+}
+.cocktail-list {
+  width:100%;
+  padding:16px;
+}
+.cocktail-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin:10px;
+}
