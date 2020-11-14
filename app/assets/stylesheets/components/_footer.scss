@@ -17,9 +17,10 @@ p {
 }
 .footer {
   background: purple;
-  display: flex;
+  display: flex-end;
   align-items: center;
   justify-content: space-between;
   height: 50px;
   padding: 0px 50px;
+  margin-top: -50px;
 }
