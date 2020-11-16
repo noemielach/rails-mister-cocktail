@@ -1,0 +1,46 @@
+#title {
+  font-family: 'Playfair Display', serif;
+  font-size: 80px;
+  font-weight:bold;
+}
+
+p{
+  color:black;
+}
+
+.image-container {
+    width: 50%;
+    height: 750px;
+}
+
+/* resize images */
+.image-container img {
+    width: auto;
+    height: 750px;
+}
+.cocktail-details{
+  display: flex;
+  justify-content:space-between;
+  height: 750px;
+  margin: 0px;
+  background-color: #F3EDEE;
+}
+
+.cocktail-details-no-photo {
+  opacity:90%;
+  padding:200px 100px;
+  text-align:left;
+  width:50%;
+  // // top:50%;
+  // position: absolute;
+}
+
+.show-button a{
+  text-decoration: none;
+  font-size:16px;
+  border: none;
+  color: black;
+  opacity: 0.8;
+  padding:32px;
+}
+
